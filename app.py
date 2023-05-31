@@ -11,7 +11,7 @@ clf = pickle.load(model_pickle)
 ## first sample endpoint
 @app.route("/ping", methods=['GET'])
 def ping():
-    return {"message": "Hi there, this endpoint is working!!!"}
+    return {"message": "Hi there, the endpoint is working!!!"}
 
 
 ## endpoint to get template request for model inference
