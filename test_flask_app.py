@@ -12,7 +12,7 @@ def client():
 def test_ping(client):
     resp = client.get("/ping")
     assert resp.status_code == 200
-    assert resp.json == {"message": "Hi there, this endpoint is working!!!"}
+    assert resp.json == {"message": "Hi there, the endpoint is working!!!"}
 
 
 ## testing the prediction endpoint
